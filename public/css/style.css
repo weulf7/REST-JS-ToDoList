@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 2px solid grey;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#4895ef, #4cc9f0);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 4rem 0;
+    color: snow;
+    text-transform: uppercase;
+}
+
+.container {
+    text-align: center;
+}
+
+ul {
+    text-align: start;
+    padding: 20px;
+    background-color: snow;
+}
+
+.newTaskInput {
+    width: 400px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
+.newTaskInput:focus {
+    outline: none;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: transparent;
+    border-radius: 1.7rem;
+    border: 2px solid snow;
+    color: snow;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.updateTaskLabel {
+    font-size: 1.4rem;
+    color: snow;
+    font-weight: 600;
+}
+
+#updatedTask {
+    border: transparent;
+    border-radius: 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#updatedTask:focus {
+    outline: none
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.updateButton {
+    margin: 15px 0;
+}
+
+.deleteButton {
+    margin: 10px 0;
+    ;
+}
+
+.back-index {
+    padding: 20px 0;
+    color: blue;
+
+}

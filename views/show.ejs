@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Task</title>
+</head>
+
+<body>
+    <h1>Task edit</h1>
+
+    <div class="container">
+        <form action="/todolist/<%=task.id%>?_method=PATCH" method="POST">
+            <label class="updateTaskLabel" for="updatedTask">Update Task:</label>
+            <br>
+            <textarea name="updatedTask" id="updatedTask" cols="30" rows="5"><%=task.task%></textarea>
+            <br>
+            <button class="updateButton">Submit</button>
+        </form>
+
+        <form action="/todolist/<%=task.id%>?_method=DELETE" method="POST">
+            <button class="deleteButton">Delete</button>
+        </form>
+        <a class="back-index" href="/todolist">Back to index</a>
+    </div>
+
+</body>
+
+</html>
